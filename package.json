@@ -1,0 +1,37 @@
+{
+  "name": "ultimate-renamer",
+  "version": "0.0.1",
+  "description": "This program can be used to rename large amount of files",
+  "main": "src/index.ts",
+  "scripts": {
+    "debug": "tsc",
+    "test": "tsc --noEmit",
+    "build": "npm run test && gulp build",
+    "start": "npm run build && node dist/index.js"
+  },
+  "author": "Zeeshan Abid",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.0",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.1",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.5.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/node": "^12.0.12",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-tslint": "^8.1.4",
+    "merge-stream": "^2.0.0",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.2"
+  },
+  "dependencies": {
+    "core-js": "^3.1.4",
+    "node-fetch": "^2.6.0",
+    "regenerator-runtime": "^0.13.2"
+  }
+}
