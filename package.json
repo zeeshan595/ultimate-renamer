@@ -1,13 +1,14 @@
 {
   "name": "ultimate-renamer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This program can be used to rename large amount of files",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
   "scripts": {
     "debug": "tsc",
     "test": "tsc --noEmit",
     "build": "npm run test && gulp build",
-    "start": "npm run build && node dist/index.js"
+    "start": "npm run build && node dist/index.js",
+    "prepublish": "npm run build"
   },
   "author": "Zeeshan Abid",
   "license": "MIT",
